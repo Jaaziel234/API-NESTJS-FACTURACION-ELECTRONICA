@@ -27,7 +27,7 @@ import { DteEntity } from './dte/entities/dte.entity';
             type: 'mysql' as const,
             url: dbUrl,
             entities: [DteEntity],
-            synchronize: false,  // ¡Importante! En prod NO uses true
+            synchronize: true,  // ¡Importante! En prod NO uses true
             // logging: true,  // descomenta para debug
           };
         }
